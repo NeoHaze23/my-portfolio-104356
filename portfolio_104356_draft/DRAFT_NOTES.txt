@@ -1,4 +1,0 @@
-BASIC DRAFT NOTES
-
-
-Project cards and modal content use matching keys: sdg12, mfa, logs, portfolio and network
