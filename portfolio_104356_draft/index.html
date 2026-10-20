@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Noel, a Network Computing student.">
+  <meta name="theme-color" content="#f5f6f8">
+  <title>Noel | Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress-bar"></span></div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Noel, home">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span class="brand-name">Noel<small>Portfolio</small></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a class="nav-link is-active" href="#home">Home</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link nav-contact" href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme" title="Switch theme">
+        <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">NETWORK COMPUTING STUDENT</p>
+          <h1 id="hero-title">Hello, I'm Noel.</h1>
+          <p class="hero-intro">I am a Network Computing student interested in software, networking and cybersecurity.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View projects</a>
+            <a class="button button-quiet" href="#contact">Contact me</a>
+          </div>
+        </div>
+        <aside class="hero-art reveal" aria-label="Portfolio focus">
+          <h2>Current interests</h2>
+          <ul>
+            <li>Web development</li>
+            <li>Network fundamentals</li>
+            <li>Cybersecurity</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-shell projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">MY WORK</p><h2 id="projects-title">Projects</h2></div>
+          <p class="section-aside">A short list of coursework and work in progress.</p>
+        </div>
+
+        <div class="project-tools reveal">
+          <label class="search-box" for="project-search">
+            <span aria-hidden="true">⌕</span>
+            <input id="project-search" type="search" placeholder="Search projects" autocomplete="off">
+          </label>
+          <div class="filter-group" role="group" aria-label="Filter projects by category">
+            <button class="filter-button is-selected" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-button" type="button" data-filter="software" aria-pressed="false">Software</button>
+            <button class="filter-button" type="button" data-filter="security" aria-pressed="false">Security</button>
+            <button class="filter-button" type="button" data-filter="networking" aria-pressed="false">Networking</button>
+          </div>
+        </div>
+        <p class="results-status" id="results-status" aria-live="polite">Showing 5 projects</p>
+
+        <div class="project-grid" id="project-grid">
+          <article class="project-card project-card-featured reveal" data-category="software" data-search="java swing sdg 12 responsible consumption gamification testing team coursework">
+            <div class="project-visual visual-sdg"><span class="visual-label">Software</span><strong>Java / Swing</strong></div>
+            <div class="project-content">
+              <div class="project-tags"><span>Java</span><span>Swing</span></div>
+              <h3>SDG 12 Application</h3>
+              <p>A team application about responsible consumption.</p>
+              <div class="project-foot"><span class="project-status"><i></i> Coursework</span><button class="text-button project-detail" type="button" data-project="sdg12">Details</button></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="security" data-search="ai ml multifactor authentication mfa security report coursework">
+            <div class="project-visual visual-mfa"><span class="visual-label">Security</span><strong>AI / ML + MFA</strong></div>
+            <div class="project-content">
+              <div class="project-tags"><span>Cybersecurity</span><span>Research</span></div>
+              <h3>AI/ML-Enhanced MFA</h3>
+              <p>A report about machine learning and authentication security.</p>
+              <div class="project-foot"><span class="project-status"><i></i> Report</span><button class="text-button project-detail" type="button" data-project="mfa">Details</button></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="security" data-search="synthetic login records authentication data analysis 150 records coursework">
+            <div class="project-visual visual-data"><span class="visual-label">Data exercise</span><strong>150 login records</strong></div>
+            <div class="project-content">
+              <div class="project-tags"><span>Synthetic data</span><span>Security</span></div>
+              <h3>Login-Event Analysis</h3>
+              <p>An exercise reviewing synthetic authentication records.</p>
+              <div class="project-foot"><span class="project-status"><i></i> Coursework</span><button class="text-button project-detail" type="button" data-project="logs">Details</button></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="software" data-search="personal portfolio website html css javascript responsive in progress">
+            <div class="project-visual visual-web"><span class="visual-label">Web development</span><strong>HTML + CSS + JS</strong></div>
+            <div class="project-content">
+              <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <h3>Portfolio Website</h3>
+              <p>A personal website that is currently being developed.</p>
+              <div class="project-foot"><span class="project-status status-progress"><i></i> In progress</span><button class="text-button project-detail" type="button" data-project="portfolio">Details</button></div>
+            </div>
+          </article>
+
+          <article class="project-card project-card-placeholder reveal" data-category="networking" data-search="network topology addressing subnetting troubleshooting lab placeholder networking">
+            <div class="project-visual visual-network"><span class="visual-label">Networking</span><strong>Project to be added</strong></div>
+            <div class="project-content">
+              <div class="project-tags"><span>Networking</span><span>Placeholder</span></div>
+              <h3>Networking Project</h3>
+              <p>To be updated.</p>
+              <div class="project-foot"><span class="project-status status-edit"><i></i> Draft</span><button class="text-button project-detail" type="button" data-project="network">Details</button></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <h3>No projects found</h3>
+          <p>Try another search or category.</p>
+          <button class="button button-quiet" id="clear-filters" type="button">Clear filters</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-heading reveal"><p class="eyebrow">ABOUT</p><h2 id="about-title">A little about me</h2></div>
+        <div class="about-copy reveal">
+          <p>I study Network Computing and am interested in how software, networks and security work together.</p>
+          <p>This portfolio will track my projects and learning progress.</p>
+          <div class="about-facts">
+            <div><span class="fact-label">FOCUS</span><strong>Networking and security</strong></div>
+            <div><span class="fact-label">LOCATION</span><strong>Sarawak, Malaysia</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow">SKILLS</p><h2 id="skills-title">What I'm learning</h2></div><p class="section-aside">Update this list to match your current skills.</p></div>
+        <div class="skills-grid">
+          <article class="skill-panel reveal"><div class="skill-panel-head"><span class="skill-number">01</span></div><h3>Development</h3><div class="skill-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span></div></article>
+          <article class="skill-panel reveal"><div class="skill-panel-head"><span class="skill-number">02</span></div><h3>Networking</h3><div class="skill-list"><span>Network basics</span><span>Addressing</span></div></article>
+          <article class="skill-panel reveal"><div class="skill-panel-head"><span class="skill-number">03</span></div><h3>Security</h3><div class="skill-list"><span>MFA concepts</span><span>Security research</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-shell" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">CONTACT</p>
+          <h2 id="contact-title">Get in touch</h2>
+          <p>For questions or professional connections, contact me by email.</p>
+          <div class="contact-email-row"><div><span class="fact-label">EMAIL</span><a class="email-link" id="email-link" href="mailto:YOUR_EMAIL_HERE">104356@siswa.unimas.my</a></div><button class="copy-button" id="copy-email" type="button" aria-label="Copy email address" title="Copy email address">Copy</button></div>
+          <p class="contact-edit-note">Replace the email placeholder before publishing.</p>
+        </div>
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-topline"><span>CONTACT FORM</span></div>
+          <div class="form-field"><label for="sender-name">Name</label><input id="sender-name" name="name" type="text" autocomplete="name" placeholder="Your name" required minlength="2"></div>
+          <div class="form-field"><label for="sender-email">Email</label><input id="sender-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+          <div class="form-field"><label for="sender-message">Message</label><textarea id="sender-message" name="message" rows="4" placeholder="Your message" required minlength="10"></textarea></div>
+          <p class="form-hint" id="form-hint">This form opens your email application; it does not send messages directly.</p>
+          <button class="button button-primary form-submit" type="submit">Prepare email</button>
+          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main"><a class="brand footer-brand" href="#home" aria-label="Noel, back to top"><span class="brand-mark" aria-hidden="true">N</span><span class="brand-name">Noel<small>Portfolio</small></span></a><p>Made with HTML, CSS and JavaScript.</p><a class="backtop-inline" href="#top">Back to top ↑</a></div>
+    <div class="container footer-bottom"><span>© <span id="current-year">2026</span> Noel</span><span>Portfolio in progress</span></div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-top"><span>PROJECT DETAILS <span id="dialog-number">01</span></span><button class="dialog-close" id="dialog-close" type="button" aria-label="Close project details">×</button></div>
+    <div class="dialog-content"><p class="dialog-category" id="dialog-category">Software</p><h2 id="dialog-title">Project title</h2><p class="dialog-summary" id="dialog-summary"></p><div class="dialog-detail-block"><h3>Objective</h3><p id="dialog-objective"></p></div><div class="dialog-detail-block"><h3>My contribution / learning</h3><p id="dialog-contribution"></p></div><div class="dialog-detail-block"><h3>Status</h3><p id="dialog-status"></p></div><p class="dialog-reminder" id="dialog-reminder" hidden></p></div>
+  </dialog>
+
+  <script type="application/json" id="project-data">
+  {
+    "sdg12": {
+      "number": "01", "category": "Software", "title": "SDG 12 Application",
+      "summary": "A team application about responsible consumption.",
+      "objective": "Present ideas related to Sustainable Development Goal 12.",
+      "contribution": "Add a short description of the screens, features and tests you personally worked on.",
+      "status": "Coursework team project."
+    },
+    "mfa": {
+      "number": "02", "category": "Security research", "title": "AI/ML-Enhanced MFA",
+      "summary": "A report about AI, machine learning and multi-factor authentication.",
+      "objective": "Explore how AI/ML may support authentication decisions.",
+      "contribution": "Add the sections and analysis that you personally completed.",
+      "status": "Coursework report."
+    },
+    "logs": {
+      "number": "03", "category": "Data exercise", "title": "Login-Event Analysis",
+      "summary": "An exercise reviewing 150 synthetic login records.",
+      "objective": "Practise reviewing authentication events using synthetic data.",
+      "contribution": "Describe the checks or analysis you actually performed. This may be part of the MFA coursework.",
+      "status": "Coursework data exercise."
+    },
+    "portfolio": {
+      "number": "04", "category": "Web development", "title": "Portfolio Website",
+      "summary": "A personal portfolio developed with HTML, CSS and JavaScript.",
+      "objective": "Present projects and skills in a responsive website.",
+      "contribution": "Edit the code, personalise the content and test the interactions yourself.",
+      "status": "In progress. Update after testing and deployment."
+    },
+    "network": {
+      "number": "05", "category": "Networking", "title": "Networking Project",
+      "summary": "Placeholder for a real networking project or learning exercise.",
+      "objective": "Add the goal of a networking task that you have completed.",
+      "contribution": "Replace this description with your actual work. Do not claim this example as a completed project.",
+      "status": "Draft placeholder.",
+      "reminder": "Replace this entry with genuine work before publishing."
+    }
+  }
+  </script>
+</body>
+</html>
